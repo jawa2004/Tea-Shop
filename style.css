@@ -1,0 +1,176 @@
+:root {
+	--yellow: #ffc45d;
+	--green: #53bf9d;
+	--red: #fe0000;
+	--white: #f5f5f5;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing {
+	background-image: url('Master.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	color: var(--white);
+}
+
+header a {
+	text-decoration: none;
+	color: var(--yellow);
+}
+
+header {
+	display: flex;
+}
+
+#logo {
+	flex: 3;
+	font-size: 1.25em;
+}
+
+nav {
+	flex: 2;
+	display: flex;
+}
+
+nav a {
+	flex: 1;
+}
+
+nav a:hover {
+	color: var(--green);
+}
+
+.maintext {
+	display: flex;
+	flex-direction: column;
+	height: 50vh;
+	justify-content: center;
+	padding: 2em;
+}
+
+.tagline1 {
+	color: var(--red);
+	font-size: 2.5em;
+	font-weight: bolder;
+}
+
+.tagline2 {
+	color: var(--yellow);
+}
+
+.maintext div {
+	margin-top: 0.75em;
+}
+
+.maintext {
+	width: 20vm;
+	margin-top: 2em;
+	border-radius: 10px;
+	padding: 0.7em;
+	background-color: var(--green);
+	color: var(--white);
+	border: 1px solid var(--green);
+}
+
+.menu {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background: linear-gradient(to right, rgb(100, 100, 100), rgb(53, 52, 52));
+	color: var(--white);
+}
+
+#menuheading,
+#locaheading {
+	background: linear-gradient(to right, rgb(100, 100, 100), rgb(53, 52, 52));
+	font-size: 2.5em;
+	color: var(--red);
+}
+
+.menu th {
+	color: var(--green);
+	font-size: 1.8em;
+}
+
+@media only screen and (max-width: 218px) {
+	.text {
+		visibility: collapse;
+	}
+	.landing {
+		visibility: visible;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	header {
+		background-color: rgba(0, 0, 0, 0.4);
+		box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+		height: 40px;
+		display: flex;
+		align-items: center;
+		position: sticky;
+		top: 0;
+		z-index: 99;
+	}
+	.landing {
+		height: 250px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.text {
+		visibility: collapse;
+	}
+	.landing {
+		visibility: visible;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.text {
+		visibility: collapse;
+	}
+	.landing {
+		visibility: visible;
+	}
+}
+
+@media only screen and (max-width: 620px) {
+	.text {
+		visibility: collapse;
+	}
+	.landing {
+		visibility: visible;
+	}
+}
+
+@media only screen and (max-width: 860px) {
+	.text {
+		visibility: collapse;
+	}
+	.landing {
+		visibility: visible;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	.text {
+		visibility: collapse;
+	}
+	.landing {
+		visibility: visible;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.text {
+		visibility: collapse;
+	}
+	.landing {
+		visibility: visible;
+	}
+}
